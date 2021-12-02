@@ -2,6 +2,33 @@ body {
     background-color: #C2B280;
 }
 
+.topnav {
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    text-align:center;
+  }
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+  }
+  
+  .topnav a:hover {
+    color: #006D5B;
+  }
+  
+  .topnav a.active {
+    color: #FF0000;
+  }
+
+#lose {
+    display: inline-block;
+}
+
 #box{
     background:#006D5B;
     border-style: solid;
@@ -78,7 +105,7 @@ body {
     height:100px;
     width:100px;
     position: absolute;
-    top: 400;
+    top: 650;
     left: 1500;
     font-size: 30px;
     color: #fff;
@@ -86,18 +113,11 @@ body {
     line-height: 100px;
 }
 
-hr { 
-    display: block; 
-    overflow: hidden; 
-    border-style: inset; 
-    border-width: 1px;
-}
-
 #p1 {
     margin-left: 150px;
     width: 10px;
     background: #fff;
-    height: 800px;
+    height: 700px;
     display: inline-block;
 }
 
@@ -105,6 +125,6 @@ hr {
     margin-left: 1300px;
     width: 10px;
     background: #fff;
-    height: 800px;
+    height: 700px;
     display: inline-block;
 }

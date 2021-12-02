@@ -1,21 +1,38 @@
+appendBox = document.getElementById("box");
+var crash;
+var elim = 0;
+var counter = 0;
+function eliminated() {
+    elim = 1;
+    document.getElementById("lose").style.display = "block";
+    document.getElementById("box").style.color = "red";
+    document.getElementById("box").innerHTML = "X";
+    document.getElementById("box").style.fontSize = "50px";
+    document.getElementById("box").style.position = "fixed";
+    document.getElementById('box').style.marginLeft  = (posLeft + 100) + "px";
 
-
-function redlight() {
-    // var appendGreenlight = document.getElementById("greenlight");
-    // var crash = Math.floor(Math.random() * (2) + 1);
-    // appendGreenlight.innerHTML = crash;
 }
 
 document.onkeydown = detectKey;
 function detectKey(e) {
+    counter++;
+    if (counter == 55) {
+        if (elim == 0) {
+          document.getElementById("win").style.display = "block";
+        }
+        elim = 1;
+    }
     if (document.getElementById("redlight").style.display == "block") {
-        document.getElementById("lose").style.display = "block";
+        eliminated();
+        stopStopwatch();
     }
     var posLeft = document.getElementById('box').offsetLeft;
     e = e || window.event;
     if (e.keyCode == '39') {
-       // right arrow
-        document.getElementById('box').style.marginLeft  = (posLeft + 1) + "px";
+       if (elim == 0) {
+          crash = Math.floor(Math.random() * (4));
+          document.getElementById('box').style.marginLeft  = (posLeft + 1) + "px";
+       }
     }
     startStopwatch();
 
@@ -26,6 +43,7 @@ function detectKey(e) {
         document.getElementById("redlight").style.display = "none";
         document.getElementById("greenlight").style.display = "block";
     }
+
     render();
 }
 
@@ -41,6 +59,14 @@ function startStopwatch(evt) {
     render();
   }
 }
+
+
+function stopStopwatch(evt) {
+    if (!paused) {
+      paused = true;
+      offset += Date.now();
+    }
+  }
 
 function resetStopwatch(evt) {
   if (paused) {
@@ -72,7 +98,6 @@ function render() {
 
   document.querySelector('#s_ms').textContent = format(value, 1, 1000, 3);
   document.querySelector('#s_seconds').textContent = format(value, 1000, 60, 2);
-  var crash = Math.floor(Math.random() * (5) + 1);
   if (format(value, 1000, 60, 2) > crash) {
     document.getElementById("redlight").style.display = "block";
     document.getElementById("greenlight").style.display = "none";

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="topnav">
+        <a href="index.html">Episode 2</a>
+        <a class="active" href="episode7.html">Episode 7</a>
+    </div>
+    <title>Sebastian's Squid Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="7style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <div id="appName">
+        <h4 id="Color Game"></h4>
+    </div>
+</head>
+<div id="square"></div>
+<script src="7script.js"></script>
+<body onload="myFunction()">
+    <br><br><br><br><br><br><br><br>
+    <center><h1 id="id1">Sebastian's Squid Games</h1></center>
+    <center><h1 id="eliminated" style="color: red; display: none;">Eliminated</h1></center>
+    <center><button id="revive" onclick="reset();" style="display: none;">Revive?</button></center>
+    <center><h1 id="win" style="color: green; display: none;">You Win!</h1></center><br>
+<div class="area">
+    <center>
+        <button id="1" onclick="one()"></button>
+        <button id="2" onclick="two()"></button>
+        <button id="3" onclick="three()"></button>
+        <button id="4" onclick="four()"></button>
+        <button id="5" onclick="five()"></button>
+        <button id="6" onclick="six()"></button><br>
+        <button id="7" onclick="seven()"></button>
+        <button id="8" onclick="eight()"></button>
+        <button id="9" onclick="nine()"></button>
+        <button id="10" onclick="ten()"></button>
+        <button id="11" onclick="eleven()"></button>
+        <button id="12" onclick="twelve()"></button>
+    </center>
+</div>
+
+<br><br>
+<center><p>how to play:</p></center>
+<center><p>just like the show, you must cross the "bridge" starting from the left-hand side, jumping across glass panes to reach the other end</p></center>
+<center><p>you do not know if the glass pane is tempered or not; "jump" on a tempered pane, you are safe to move to the next pane</p></center>
+<center><p>jump on a pane that is not tempered, you fall to your doom and may be able to revive to try again</p></center>
+<br><br>
+<script>
+</script>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</html>
