@@ -8,7 +8,6 @@ function eliminated() {
     document.getElementById("box").style.color = "red";
     document.getElementById("box").innerHTML = "X";
     document.getElementById("box").style.fontSize = "50px";
-    document.getElementById("box").style.position = "fixed";
     document.getElementById('box').style.marginLeft  = (posLeft + 100) + "px";
 
 }

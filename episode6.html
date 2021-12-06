@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="topnav">
+        <a href="index.html">Episode 1</a>
+        <a class="active" href="episode6.html">Episode 6</a>
+        <a href="episode7.html">Episode 7</a>
+    </div>
+    <title>Sebastian's Squid Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+<div id="square"></div>
+<script src="6script.js"></script>
+    <div class="wrapper">
+        <h1 id="win" style="color: green; display: none;">Round Passed... Continue to the Next Round</h1>
+        <h1 id="lose" style="color: red; display: none;">Eliminated</h1>
+        <h2>Available Marbles: <span id="marbles">5</span></h2>
+        <h2>Bet: <span id="bet">0</span></h2>
+        <button id="button-increase">Increase Bet</button>
+        <button id="button-decrease">Decrease Bet</button><br>
+        <button id="button-max">Max Bet</button>
+        <button id="button-min">Min Bet</button>
+        <center>
+            <button id="button-start">Start</button>
+            <button id="button-even">Even</button>
+            <button id="button-odd">Odd</button>
+            <b id="totalTime"></b>
+        </center>
+
+        <br><br><br><br>
+        <center><span>How to play:</span><br></center>
+        <center><span>You have 5 marbles, your opponent has 5 marbles</span><br></center>
+        <center><span>You have to guess whether your opponent is thinking of an even or odd number</span><br></center>
+        <center><span>Guess it right? You receive your bet from your opponent</span></center>
+        <center><span>Guess it wrong? You give your bet to your opponent</span></center>
+        <center><span>If you get to 10 marbles, you may continue to the next round</span></center>
+        <center><span>If you get to 0 marbles, you will be eliminated</span></center>
+    </div> 
+</html>
