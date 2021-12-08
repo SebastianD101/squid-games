@@ -3,50 +3,56 @@
 <head>
     <div class="topnav">
         <a href="index.html">Game 1</a>
-        <a href="episode3.html">Game 2</a>
+        <a class="active" href="episode3.html">Game 2</a>
         <a href="episode4.html">Game 3</a>
         <a href="episode6.html">Game 4</a>
-        <a class="active" href="episode7.html">Game 5</a>
+        <a href="episode7.html">Game 5</a>
     </div>
     <title>Sebastian's Squid Game</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="7style.css">
+    <link rel="stylesheet" href="3style.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
-    <div id="appName">
-        <h4 id="Color Game"></h4>
-    </div>
 </head>
 <div id="square"></div>
-<script src="7script.js"></script>
-<body onload="myFunction()">
+<script src="3script.js"></script>
+<body>
     <br><br><br><br><br><br><br><br>
     <center><h1 id="id1">Sebastian's Squid Games</h1></center>
     <center><h1 id="eliminated" style="color: red; display: none;">Eliminated</h1></center>
-    <center><button id="revive" onclick="reset();" style="display: none;">Revive?</button></center>
     <center><h1 id="win" style="color: green; display: none;">You Win!</h1></center><br>
 <div class="area">
     <center>
+        <div id="countdown"></div>
         <button id="1" onclick="one()"></button>
+        <br>
         <button id="2" onclick="two()"></button>
-        <button id="3" onclick="three()"></button>
+        <button id="3" onclick="three()" style="margin-left: 50px;"></button>
+        <br>
         <button id="4" onclick="four()"></button>
-        <button id="5" onclick="five()"></button>
-        <button id="6" onclick="six()"></button><br>
-        <button id="7" onclick="seven()"></button>
+        <button id="5" onclick="five()" style="margin-left: 150px;"></button>
+        <br>
+        <button id="6" onclick="six()"></button>
+        <button id="7" onclick="seven()" style="margin-left: 250px;"></button>
+        <br>
         <button id="8" onclick="eight()"></button>
-        <button id="9" onclick="nine()"></button>
+        <button id="9" onclick="nine()" style="margin-left: 350px;"></button>
+        <br>
         <button id="10" onclick="ten()"></button>
-        <button id="11" onclick="eleven()"></button>
-        <button id="12" onclick="twelve()"></button>
+        <button id="11" onclick="eleven()" style="margin-left: 25px;"></button>
+        <button id="12" onclick="twelve()" style="margin-left: 25px;"></button>
+        <button id="13" onclick="thirteen()" style="margin-left: 25px;"></button>
+        <button id="14" onclick="fourteen()" style="margin-left: 25px;"></button>
+        <button id="15" onclick="fifteen()" style="margin-left: 25px;"></button>
+        <button id="16" onclick="sixteen()" style="margin-left: 25px;"></button>
     </center>
 </div>
 
 <br><br>
 <center><p>how to play:</p></center>
-<center><p>just like the show, you must cross the "bridge" starting from the left-hand side, jumping across glass panes to reach the other end</p></center>
-<center><p>you do not know if the glass pane is tempered or not; "jump" on a tempered pane, you are safe to move to the next pane</p></center>
-<center><p>jump on a pane that is not tempered, you fall to your doom and may be able to revive to try again</p></center>
+<center><p>"cut" out the triangle shape by pressing all the buttons around the candy</p></center>
+<center><p>a 7 second timer starts when the first button is pressed</p></center>
+<center><p></p></center>
 <br><br>
 <script>
 </script>

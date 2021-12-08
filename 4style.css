@@ -1,0 +1,42 @@
+body {
+    background-color: #000000;
+}
+
+span {
+    color: #FFFFFF;
+}
+
+.topnav {
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    text-align:center;
+  }
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+  }
+  
+  .topnav a:hover {
+    color: #006D5B;
+  }
+  
+  .topnav a.active {
+    color: #FF0000;
+  }
+
+#box{
+    color: red;
+    font-size: 40px;
+    height: 30px;
+    width: 30%;
+    margin: auto;
+    margin-top: 400px;
+    background-color: rgba(255, 230, 0, 0.815);
+    border-radius: 25px;
+    text-align: center;
+}
